@@ -1,0 +1,86 @@
+body {
+    color: #999;
+}
+
+
+.card {
+    width: 800px;
+    margin-bottom: 0;
+  }
+  
+  .hole-game {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: rgb(183, 243, 203);; */
+  }
+  
+  .hole {
+    width: 150px;
+    height: 150px;
+    margin: 0 15px 30px;
+    background: rgb(8, 121, 46);
+    border-radius: 50%;
+    cursor: url("../img/hammer.png"), auto;
+  }
+  
+  .hole_has-goblin {
+    background-image: url('../img/goblin.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(130, 33, 23);
+  }
+
+.btn-start,
+.btn-stop
+{ width: 6em;  
+  height: 3em ;
+  font-size: 1.5em;
+  border-color: blue;
+  border-radius: 1em;
+  border-width: 2px;
+  color: blue;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.boom {
+  background-image: url('../img/boom.png');
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 9999;
+}
+
+.click-holes {
+  width: 3em;  
+  height: 3em ;
+  font-size: 3.5em;
+  border-color: blue;
+  border-radius: 1em;
+  border-width: 2px;
+  color: rgb(130, 33, 23);
+  margin: 20px;
+}
+
+.status {
+  font-size: 2em;
+  color: rgb(130, 33, 23);
+}
+
+.game-over {
+  font-size: 3em;
+  text-align: center;
+  /* display: inline-block; */
+  width: 20%;
+  margin-left:3%;
+  margin-top: 5%;
+  padding: 25px;
+  border: 1px solid #d6e9c6;
+  border-radius: 2em;
+  color:rgb(130, 33, 23);
+  background-color: #f4bebf;
+}
+  
