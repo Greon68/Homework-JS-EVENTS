@@ -22,7 +22,6 @@ export default class GoblinGame {
           setTimeout( ()=> {
             gameOverElement.remove();
         },1500);
-        // console.log(gameOverElement)
 
     }
 
@@ -40,7 +39,6 @@ export default class GoblinGame {
         for (let i=0; i<16; i++){
             let hole = document.createElement('div');
             hole.className = "hole";
-            // hole.textContent= `${i}`;
             holeGame.append(hole);
         };
 
@@ -64,7 +62,6 @@ export default class GoblinGame {
         function getIndex() {
             for (let i = 0; i < 16; i++){
                 if (holes[i].classList.contains( 'hole_has-goblin' )){
-                    // console.log(` Предыдущая лунка ${i}`);
                     return i               
                 }        
             }      
@@ -85,7 +82,6 @@ export default class GoblinGame {
             while(previousIndex == index) {
                 index = Math.floor( Math.random() * 16 );
             };
-            // console.log(`Cледующая лунка- ${index}`)
             return index       
         }
     
@@ -95,8 +91,6 @@ export default class GoblinGame {
         // Добавляем картинку в лунку 
         const addGoblin = () =>{
             holes[nextIndex()].classList.add("hole_has-goblin");
-            // holes[0].classList.add("boom");
-
         } 
                
         //  Меняем разположение картинки каждую 1 секунду
@@ -125,13 +119,11 @@ export default class GoblinGame {
         let caught = document.querySelector('span.caught');
         let miss = document.querySelector('span.miss');
         let countClick = document.querySelector('span.count-click');
-        // console.log(caught);
-        // console.log(caught.textContent);
-        
+       
         // Увеличение счётчика по клику по лунке
         holeGame.addEventListener('click', (event)=> {
             const target = event.target;
-            // console.log(target);
+            
             if (target.classList.contains("hole")){     
                 countClick.textContent = Number(countClick.textContent) +1; 
 
