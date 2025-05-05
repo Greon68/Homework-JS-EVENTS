@@ -1,16 +1,17 @@
 // TODO: write code here
 "use strict";
 
+
 // console.log("app.js included");
 
-import GoblinGame from  "./game";
+import GoblinGame from "./game";
 
-const gameElement = document.querySelector('.container-game');
+const gameElement = document.querySelector(".container-game");
 
-let btnStart = document.querySelector('.btn-start');
+let btnStart = document.querySelector(".btn-start");
 
 const game = new GoblinGame(gameElement);
 
 // Запускаем игру нажатием кнопки "Играем"
 
-btnStart.addEventListener('click', game.createGame );
+btnStart.addEventListener("click", game.createGame);
